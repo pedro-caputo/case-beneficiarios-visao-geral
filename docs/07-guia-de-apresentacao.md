@@ -152,3 +152,4 @@ A narrativa foi construída para demonstrar visão de ponta a ponta: do diagnós
 - **Power Automate:** Orquestrador assíncrono de eventos, responsável pela ingestão, cálculo de regras, cronômetro de SLA e mensageria;
 - **SharePoint Online:** Repositório seguro e de baixo custo para guarda de arquivos e certidões digitalizadas;
 - **Power BI:** Camada de observabilidade e inteligência gerencial para acompanhamento de coortes e cumprimento de SLA."*
+

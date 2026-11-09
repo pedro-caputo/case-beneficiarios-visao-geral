@@ -111,3 +111,4 @@ Para assegurar integridade técnica e transparência analítica perante bancas d
 3. **Ausência de Integração Legada:** O protótipo demonstra o fluxo com persistência demonstrativa local; não houve conexão física a barramentos de mensageria (Kafka/MQ) ou APIs do sistema core legado de seguros.
 4. **Cumprimento Efetivo de SLA:** A redução do esforço manual mitiga sobrecarga e filas internas, mas **não comprova matematicamente que o índice de cumprimento de SLA saltará de 62% para 100%**, dado que atrasos causados pelo tempo de resposta do cliente dependem de fatores externos à seguradora.
 5. **Independência das Soluções:** Os resultados de -87,2% não foram gerados pela Power Platform, que é uma especificação de arquitetura corporativa e não teve execução de lote sintético em nuvem.
+

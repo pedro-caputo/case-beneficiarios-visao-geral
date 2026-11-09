@@ -128,3 +128,4 @@ pie title Distribuição do Esforço Humano no AS-IS (313,33 h/mês)
 > - Tempo de concorrência operacional.
 >
 > **Conclusão:** Reduzir o esforço humano ativo de 313,33 horas para patamares menores alivia a equipe operacional e elimina gargalos internos, mas a redução do lead time percebido pelo cliente depende igualmente da agilidade do segurado no envio de pendências e da pontualidade das confirmações cadastrais.
+

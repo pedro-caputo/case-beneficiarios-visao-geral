@@ -95,3 +95,4 @@ gantt
 - Expansão progressiva do novo fluxo para 50% e subsequentemente 100% da volumetria mensal de seguros PF.
 - Treinamento formal da célula de analistas na operação da Bancada do Analista e gestão visual de SLA.
 - Desativação controlada da caixa de entrada de e-mail compartilhada como ponto de triagem manual.
+

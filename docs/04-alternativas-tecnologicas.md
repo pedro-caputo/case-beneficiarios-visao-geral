@@ -114,3 +114,4 @@ flowchart TD
 A coexistência dessas duas alternativas oferece valor técnico complementar a qualquer comitê de arquitetura e tecnologia:
 - A **Alternativa A** responde com precisão matemática às perguntas: *"As regras de negócio funcionam? Qual é o comportamento do processo sob estresse de 1.000 solicitações? Quanto esforço operacional ativo pode ser poupado?"*
 - A **Alternativa B** responde com rigor estrutural às perguntas: *"Como esse processo se integra ao ecossistema corporativo existente? Como tratar segregação de funções, retenção documental e governança de dados na nuvem corporativa?"*
+

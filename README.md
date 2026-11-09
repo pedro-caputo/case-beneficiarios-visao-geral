@@ -105,17 +105,17 @@ Processo estruturado, com validações na entrada, roteamento automático e pres
 ```mermaid
 flowchart TD
     E1["1. Entrada Multicanal"] --> E2["2. Formulário Estruturado"]
-    E2 --> E3["3. Validação Preventiva (Shift-Left)\n(Validação CPF mod 11, soma 100%, anexos)"]
+    E2 --> E3["3. Validação Preventiva (Shift-Left)<br>(Validação CPF mod 11, soma 100%, anexos)"]
     E3 --> E4["4. Registro e Geração de Protocolo"]
     E4 --> E5["5. Validação Sistêmica de Checklist"]
     E5 --> E6["6. Classificação e Roteamento"]
 
-    E6 -->|Documentação Regular (75%)| E8["8. Fila de Cadastro Assistido"]
-    E6 -->|Documento Ausente (19%)| E7A["7A. Notificação Padronizada\n(Pausa no Relógio de SLA)"]
-    E6 -->|Exceção / Ilegível (6%)| E7B["7B. Bancada do Analista\n(Julgamento Humano)"]
+    E6 -->|"Documentação Regular (75%)"| E8["8. Fila de Cadastro Assistido"]
+    E6 -->|"Documento Ausente (19%)"| E7A["7A. Notificação Padronizada<br>(Pausa no Relógio de SLA)"]
+    E6 -->|"Exceção / Ilegível (6%)"| E7B["7B. Bancada do Analista<br>(Julgamento Humano)"]
 
-    E7A -.->|Cliente envia anexo válido| E5
-    E7B -->|Decisão fundamentada| E8
+    E7A -.->|"Cliente envia anexo válido"| E5
+    E7B -->|"Decisão fundamentada"| E8
     
     E8 --> E9["9. Confirmação Humana com Chave de Evidência"]
     E9 --> E10["10. Conclusão Cadastral e Parada de SLA"]

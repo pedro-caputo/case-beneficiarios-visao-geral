@@ -21,23 +21,23 @@ A jornada de uma solicitação foi remodelada em um ciclo de vida composto por 1
 
 ```mermaid
 flowchart TD
-    E01["1. Entrada Multicanal\n(Web, Agência, App)"] --> E02["2. Formulário Padronizado\n(Campos obrigatórios estruturados)"]
-    E02 --> E03["3. Validação Preventiva (Shift-Left)\n(Validação de CPF mod 11, soma 100%, anexos legíveis)"]
-    E03 --> E04["4. Registro e Geração de Protocolo\n(Identificador único imutável)"]
-    E04 --> E05["5. Validação Sistêmica e Regras\n(Conferência automatizada de checklist)"]
-    E05 --> E06["6. Classificação e Roteamento\n(STP vs Pendência vs Exceção)"]
+    E01["1. Entrada Multicanal<br>(Web, Agência, App)"] --> E02["2. Formulário Padronizado<br>(Campos obrigatórios estruturados)"]
+    E02 --> E03["3. Validação Preventiva (Shift-Left)<br>(Validação de CPF mod 11, soma 100%, anexos legíveis)"]
+    E03 --> E04["4. Registro e Geração de Protocolo<br>(Identificador único imutável)"]
+    E04 --> E05["5. Validação Sistêmica e Regras<br>(Conferência automatizada de checklist)"]
+    E05 --> E06["6. Classificação e Roteamento<br>(STP vs Pendência vs Exceção)"]
 
-    E06 -->|Documentação Regular| E08["8. Fila de Cadastro Assistido"]
-    E06 -->|Documento Ausente| E07A["7A. Notificação de Pendência\n(Pausa no Relógio de SLA)"]
-    E06 -->|Ilegibilidade / Dúvida| E07B["7B. Bancada do Analista\n(Fila de Exceções Humanas)"]
+    E06 -->|"Documentação Regular"| E08["8. Fila de Cadastro Assistido"]
+    E06 -->|"Documento Ausente"| E07A["7A. Notificação de Pendência<br>(Pausa no Relógio de SLA)"]
+    E06 -->|"Ilegibilidade / Dúvida"| E07B["7B. Bancada do Analista<br>(Fila de Exceções Humanas)"]
 
-    E07A -.->|Cliente envia complemento identificável| E05
-    E07B -->|Análise fundamentada e deferimento| E08
-    E07B -->|Indeferimento justificado| E10["10. Conclusão Cadastral"]
+    E07A -.->|"Cliente envia complemento identificável"| E05
+    E07B -->|"Análise fundamentada e deferimento"| E08
+    E07B -->|"Indeferimento justificado"| E10["10. Conclusão Cadastral"]
 
-    E08 --> E09["9. Confirmação Humana\n(Validação assistida no Core e chave de evidência)"]
+    E08 --> E09["9. Confirmação Humana<br>(Validação assistida no Core e chave de evidência)"]
     E09 --> E10
-    E10 --> E11["11. Comunicação Final e Log Auditável\n(Notificação ao cliente e arquivamento append-only)"]
+    E10 --> E11["11. Comunicação Final e Log Auditável<br>(Notificação ao cliente e arquivamento append-only)"]
 ```
 
 ### Detalhamento das Etapas:
@@ -138,3 +138,4 @@ Todas as ações operacionais gravam uma trilha permanente de auditoria:
 
 > [!NOTE]
 > Os parâmetros exatos de contagem de prazo (dias úteis bancários vs dias corridos, horário de corte das 18h e feriados nacionais) constituem definições que devem ser formalmente validadas com a área jurídica e de compliance antes de qualquer implantação corporativa em produção.
+

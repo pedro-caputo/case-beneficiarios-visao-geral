@@ -103,12 +103,12 @@ flowchart LR
     E4 --> E5["5. Validação Sistêmica"]
     E5 --> E6["6. Roteamento"]
     
-    E6 -->|Documentação Regular| E8["8. Cadastro Assistido"]
-    E6 -->|Documento Ausente| E7A["7A. Pendência & Pausa SLA"]
-    E6 -->|Exceção/Ilegível| E7B["7B. Bancada do Analista"]
+    E6 -->|"Documentação Regular"| E8["8. Cadastro Assistido"]
+    E6 -->|"Documento Ausente"| E7A["7A. Pendência & Pausa SLA"]
+    E6 -->|"Exceção / Ilegível"| E7B["7B. Bancada do Analista"]
 
-    E7A -.->|Cliente envia complemento| E5
-    E7B -->|Decisão Fundamentada| E8
+    E7A -.->|"Cliente envia complemento"| E5
+    E7B -->|"Decisão Fundamentada"| E8
     
     E8 --> E9["9. Confirmação Humana"]
     E9 --> E10["10. Conclusão Cadastral"]
@@ -226,3 +226,4 @@ TO-BE (Exp.):   [████] 40,25 h/mês (-87,2%)
 1. **Validação das Regras Pendentes:** Workshop com a gerência de produtos e jurídico para fechar a política de lista integral vs parcial e calendário oficial de SLA (dias úteis vs corridos).
 2. **Definição do Roteiro de Arquitetura:** Avaliação executiva entre a adoção de ecossistema Low-Code (Power Platform) ou implementação corporativa baseada em microsserviços.
 3. **Piloto Controlado (*Shadow Run*):** Execução assistida com 10% da volumetria real para calibragem dos tempos médios de atendimento (TMA) e validação da taxa de STP.
+
