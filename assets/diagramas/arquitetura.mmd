@@ -1,0 +1,12 @@
+flowchart TD
+  C["Canais existentes"] --> E["Entrada e estruturação assistida"]
+  E --> A["Power Apps: bancada"]
+  A --> D["Dataverse: comandos e dados"]
+  D --> F["Power Automate: orquestração"]
+  F --> S["SharePoint: documentos"]
+  F --> O["Comunicação e tratamento de falhas"]
+  D --> B["Power BI: indicadores"]
+  A --> H["Analista: execução no legado"]
+  H --> K["Confirmação humana com evidência"]
+  K --> D
+  F -. "Dependência futura não implementada" .-> I["Integração autorizada com legado"]

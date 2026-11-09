@@ -1,0 +1,16 @@
+flowchart TD
+  E["Entrada estruturada e revisão"] --> V["Validação preventiva"]
+  V --> Q{"Completa e regular?"}
+  Q -->|Sim| F["Pronta para cadastro"]
+  Q -->|Inconclusiva| H["Análise humana"]
+  H -->|Aprovada| V
+  H -->|Complemento necessário| P["Pendência e comunicação"]
+  P -->|Evidência elegível| A["Aguardar cliente: pausa"]
+  A --> C["Receber complemento e retomar SLA"]
+  C --> E
+  F --> M["Analista executa no legado"]
+  M --> K["Confirmação humana e encerramento cadastral"]
+  K --> O["Outbox: comunicação final"]
+  O --> R{"Resultado do envio"}
+  R -->|Aceito tecnicamente| S["Registrar aceite"]
+  R -->|Falha ou incerto| T["Tratar e conciliar sem repetir cadastro"]

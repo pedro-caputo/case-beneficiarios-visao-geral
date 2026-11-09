@@ -1,0 +1,11 @@
+erDiagram
+  Solicitacoes ||--o{ Pendencias : possui
+  Solicitacoes ||--o{ Tarefas : demanda
+  Tarefas ||--o{ SessoesTrabalho : mede
+  Solicitacoes ||--o{ Comunicacoes : comunica
+  Pendencias o|--o{ Comunicacoes : motiva
+  Comunicacoes ||--o{ TentativasComunicacao : tenta
+  Solicitacoes ||--o{ Eventos : registra
+  Solicitacoes ||--o{ IntervalosSLA : controla
+  Solicitacoes o|--o{ Comandos : executa
+  Comandos ||--o{ Eventos : produz

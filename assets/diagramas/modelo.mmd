@@ -1,0 +1,11 @@
+erDiagram
+  Segurados ||--o{ Solicitacoes : identifica
+  Entradas ||--o| Solicitacoes : origina
+  Solicitacoes ||--o{ Revisoes : versiona
+  Entradas o|--o{ Revisoes : complementa
+  Revisoes ||--o{ Beneficiarios : contem
+  Revisoes ||--o{ Documentos : evidencia
+  Revisoes ||--o{ Validacoes : verifica
+  Politicas ||--o{ Solicitacoes : governa
+  Politicas ||--o{ Validacoes : orienta
+  Politicas ||--o{ RequisitosDocumento : define
